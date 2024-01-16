@@ -1,0 +1,25 @@
+<html> _ _
+<tubuh> _ _
+    < bentuk tindakan= "" metode= "POSTING" >
+        < H1 > Biodata < /h1 >
+        Nama: < jenis masukan=teks nama= "nama1" >< br >< br >
+        Alamat: < nama textarea=alamat > < /textarea >< br >< br > 
+        Usia: < tipe input=nama teks=usia >< br >< br >
+        Telepon: < jenis masukan=nama teks=telepon >< br >< br >
+        Email: < jenis masukan=nama teks=email >< br >< br >
+        Kualifikasi Pendidikan: < tipe input=teks nama=kualifikasi >< br >
+        < tipe masukan=nilai kirim=Tampilan >< br >< br >
+    </bentuk> _ _
+< /tubuh >
+< /html >
+< ?php
+jika ( $_POST ) {  
+    echo "<h1>Biodata</h1>" ; 
+    gema "Nama: " . $_POST[ "nama1" ] . "<br>" ; 
+    gema "Alamat: " . $_POST[ "alamat" ] . "<br>" ; 
+    gema "Umur: " . $_POST[ "usia" ] . "<br>" ; 
+    gema "Seluler: " . $_POST[ "telepon" ] . "<br>" ; 
+    gema "Email: " . $_POST[ "email" ] . "<br>" ; 
+    gema "Kualifikasi: " . $_POST[ "kualifikasi" ] . "<br>" ; 
+}
+? >
